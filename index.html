@@ -6,17 +6,20 @@
 <title>Luis Gil</title>
 <style>
     /* CSS to center the image */
-    body, html {
+    html, body {
         height: 100%;
         margin: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: left;
+    }
+    .container {
+        display: flex;
+        align-items: center;
     }
     img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
     </style>
@@ -34,12 +37,17 @@ var images = [
 function displayRandomImage() {
     var img = document.createElement('img');
     img.src = images[Math.floor(Math.random() * images.length)];
-    document.body.appendChild(img);
+    document.querySelector('.container').appendChild(img);
 }
 </script>
+
 </head>
 <body onload="displayRandomImage();">
-    <h1>LUIS GIL >>> </h1>
-    <p> Computer Scientist </p>
+    <div class="container">
+        <div>
+            <h1>LUIS GIL >>> </h1>
+            <p> Computer Scientist </p>
+        </div>
+    </div>
 </body>
 </html>
