@@ -20,6 +20,13 @@
         display: flex;
         align-items: center;
     }
+    a {
+        color: white; /* Ensuring the link is white */
+        text-decoration: none; /* Removing underline from the link */
+    }
+    a:hover {
+        text-decoration: underline; /* Adding underline on hover for better interaction feedback */
+    }
     img {
         max-width: 80%;
         height: auto;
@@ -52,5 +59,6 @@ function displayRandomImage() {
             <p> Security Engineer </p>
         </div>
     </div>
+    <p><a href="mailto:luis@porygon.ai">Contact</a></p>
 </body>
 </html>
