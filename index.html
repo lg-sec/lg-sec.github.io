@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luis Gil</title>
+<script>
+// List of image URLs
+var images = [
+    'https://i.pinimg.com/originals/74/c2/f0/74c2f0be552806e0b686e1396751f4a9.gif',  // Replace 'URL1' with your actual image URL
+    'https://31.media.tumblr.com/tumblr_mdoi4j8RvO1riecpjo1_400.gif',  // Replace 'URL2' with your actual image URL
+    'https://orig00.deviantart.net/5462/f/2016/314/1/4/porygon_flip_by_cortoony-danyc80.gif',   // Replace 'URL3' with your actual image URL
+    'https://media3.giphy.com/media/l0HlN5gabfeckp2kE/200w.gif?cid=6c09b952omytqvxz4qooi4mgdwjpzngwyzsv2862mrv9a0gt&ep=v1_gifs_search&rid=200w.gif&ct=g',
+    'https://i.kym-cdn.com/photos/images/original/000/321/101/4c6.gif'
+];
+
+// Function to choose and display a random image from the list
+function displayRandomImage() {
+    var img = document.createElement('img');
+    img.src = images[Math.floor(Math.random() * images.length)];
+    document.body.appendChild(img);
+}
+</script>
+</head>
+<body onload="displayRandomImage();">
+</body>
+</html>
