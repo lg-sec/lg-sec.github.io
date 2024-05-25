@@ -17,10 +17,28 @@
         background-color: black; /* Black background */
         color: white;            /* White text */
         font-family: monospace;
+
     }
+
     .container {
         display: flex;
         align-items: center;
+    }
+
+    .bio {
+        margin-right: 40px
+    }
+
+    .titles {
+        
+        
+        color:lightgreen;
+        text-align: right;
+
+    }
+
+    .contact {
+        margin-top: 100px;
     }
     a {
         color: white; /* Ensuring the link is white */
@@ -57,13 +75,15 @@ function displayRandomImage() {
 </head>
 <body onload="displayRandomImage();">
     <div class="container">
-        <div>
-            <h1>LUIS GIL >>>&nbsp;&nbsp;&nbsp;</h1>
-            <p> Computer Scientist </p>
-            <p> Security Engineer </p>
+        <div class="bio">
+            <h1>LUIS GIL >>></h1>
+            <div class="titles">
+                <p> Computer Scientist </p>
+                <p> Security Engineer </p>
+            </div>
         </div>
     </div>
-    <div style="margin-top: 100px;">
+    <div class="contact">
         <p><a href="mailto:luis@porygon.ai">Contact</a> | <a href="https://github.com/lg-sec">Github</a> | <a href="https://www.linkedin.com/in/luis-gil-3bba00b9/">LinkedIn</a></p>
     </div>
 </body>
